@@ -8,7 +8,6 @@ const output = '<h1 color=blue>Hello Node JS World</h1>';
 const server = http.createServer( (req, res) => {
     res.statusCode = 200;
     res.setHeader('Content-Type', 'text/HTML');
-    res.write('starting the output');
     res.end(output);
 } );
 
