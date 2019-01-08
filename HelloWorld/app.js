@@ -3,10 +3,13 @@ const http = require('http');
 const hostName = '127.0.0.1';
 const portNumber = 3003;
 
+const output = '<h1 color=blue>Hello Node JS World</h1>';
+
 const server = http.createServer( (req, res) => {
     res.statusCode = 200;
-    res.setHeader('Content-Type', 'text/plain');
-    res.end('Hello Node JS World\n');
+    res.setHeader('Content-Type', 'text/HTML');
+    res.write('starting the output');
+    res.end(output);
 } );
 
 server.listen( portNumber, hostName, () => {
