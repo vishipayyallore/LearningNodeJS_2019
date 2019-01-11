@@ -8,7 +8,7 @@
             "type": "node",
             "request": "launch",
             "name": "Launch Program",
-            "program": "${workspaceFolder}/FileDemo/app.js"
+            "program": "${workspaceFolder}/EventLoopDemo/app.js"
         }
     ]
 }
