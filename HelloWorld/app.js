@@ -4,14 +4,16 @@ var fileSystem = require("fs");
 const hostName = '127.0.0.1';
 const portNumber = 3003;
 
-var output;
+var output = fileSystem.readFileSync('./HelloWorld/outputHTML.txt');
 
+/*
 fileSystem.readFile('./HelloWorld/outputHTML.txt', function(error, data){
     if(error){
         return console.error(error);
     }
     output = data.toString();
 });
+*/
 
 const server = http.createServer( (req, res) => {
     res.statusCode = 200;

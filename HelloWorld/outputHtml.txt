@@ -5,6 +5,13 @@
     <body bgcolor=yellow>
         <h1 style=color:blue; align=center>Hello Node JS World</h1>
         <HR>
+        
+        <div> 
+            This is a sample text. This is a sample text. This is a sample text. This is a sample text. 
+            This is a sample text. This is a sample text. This is a sample text. This is a sample text. 
+            This is a sample text. This is a sample text. This is a sample text. This is a sample text. 
+            This is a sample text. This is a sample text. This is a sample text. This is a sample text. 
+        </div>
 
         <HR>
         <h4>Footer</h4>
