@@ -1,0 +1,12 @@
+<html>
+    <head>
+        <title>Hello Node JS</title>
+    </head>
+    <body bgcolor=yellow>
+        <h1 style=color:blue; align=center>Hello Node JS World</h1>
+        <HR>
+
+        <HR>
+        <h4>Footer</h4>
+    </body>
+</html>

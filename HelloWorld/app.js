@@ -1,17 +1,17 @@
 const http = require('http');
+var fileSystem = require("fs");
 
 const hostName = '127.0.0.1';
 const portNumber = 3003;
 
-const output = `
-                <head>
-                    <title>Hello Node JS</title>
-                </head>
-                <body bgcolor=#ABCEDF>
-                    <h1 style=color:blue; align=center>Hello Node JS World</h1>
-                    <HR>
-                </body>
-                `;
+var output;
+
+fileSystem.readFile('./HelloWorld/outputHTML.txt', function(error, data){
+    if(error){
+        return console.error(error);
+    }
+    output = data.toString();
+});
 
 const server = http.createServer( (req, res) => {
     res.statusCode = 200;
