@@ -6,7 +6,7 @@ var eventName1 = 'connection';
 var inputData = { Name: 'Shiva', Age: 25, Salary: 21345 };
 
 // Event Handler
-var connectionHandler = function connected(){
+var connectionHandler = function connected() {
     console.log('Connection Successful');
 
     eventEmitter.emit(eventName, inputData);
@@ -14,7 +14,7 @@ var connectionHandler = function connected(){
 
 eventEmitter.on(eventName1, connectionHandler);
 
-eventEmitter.on(eventName, function(input){
+eventEmitter.on(eventName, function (input) {
     console.log('----- data received succesfully -----');
     console.log(`Person Details: ${input.Name} ${input.Age} ${input.Salary}`);
 });

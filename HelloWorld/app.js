@@ -10,19 +10,19 @@ var output = '';
 // since it will tie up the single thread loop while I/O is performed. 
 // var output = fileSystem.readFileSync('./HelloWorld/outputHTML.txt');
 
-fileSystem.readFile('./HelloWorld/outputHTML.txt', function(error, data){
-    if(error){
+fileSystem.readFile('./HelloWorld/outputHTML.txt', function (error, data) {
+    if (error) {
         return console.error(error);
     }
     output = data.toString();
 });
 
-const server = http.createServer( (req, res) => {
+const server = http.createServer((req, res) => {
     res.statusCode = 200;
     res.setHeader('Content-Type', 'text/HTML');
-    res.end(output + ' <h1>' + new Date(Date.now()).toLocaleString()   + '</h1>');
-} );
+    res.end(output + ' <h1>' + new Date(Date.now()).toLocaleString() + '</h1>');
+});
 
-server.listen( portNumber, hostName, () => {
+server.listen(portNumber, hostName, () => {
     console.log(`Server running at http://${hostName}:${portNumber}/`);
 });
