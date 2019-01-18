@@ -1,7 +1,7 @@
 var dt = require("./DataTimeModule");
 
 setInterval(function () {
-    
+
    console.log(dt.dateTimeISO());
 
 }, 1000);
