@@ -30,7 +30,7 @@ const colors = {
     }
 };
 
-console.log("This is Log method.");
+console.log(colors.fg.Green, "This is Log method.");
 
 console.warn("This is Warn method.");
 
