@@ -8,7 +8,7 @@
             "type": "node",
             "request": "launch",
             "name": "Launch Program",
-            "program": "${workspaceFolder}/Jan2019/19Jan2019/app.js"
+            "program": "${workspaceFolder}/Jan2019/19/app.js"
         }
     ]
 }
